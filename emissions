@@ -1,0 +1,8 @@
+Me and my 
+
+The main objective of this project was to understand the relationship between CO2 emissions, temperature, and time. We also wanted to see a breakdown by country
+to understand how these countries have contributed to global emissions. We combined 2 datasets from Kaggle: One contained global emissions data from the years 1750-2022
+and went into the details of the emission source: like oil, gas, flaring, or coal. The other dataset provided global temperature data from roughly the same years and
+listed the average temperature per month. Our research questions focus on the relationship between CO2 emissions, time, temperatures, and countries.
+
+Let’s start with the relationship between time and temperature, and time and total emissions in the past century.
