@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica Neue', sans-serif;
-  background: url('leaf_bg.png') no-repeat center center fixed;
+  font-family: 'Georgia', serif;
+  background: url('../assets/leaf_bg.png') no-repeat center center fixed;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -11,27 +11,26 @@ body {
 }
 
 .container {
-  background: rgba(0, 0, 0, 0.6);  /* translucent black */
+  background: rgba(255, 255, 255, 0.7);  /* semi-transparent white */
   border-radius: 20px;
   padding: 40px;
   max-width: 800px;
-  color: white;
+  color: #1a1a1a;  /* dark text */
   text-align: center;
   backdrop-filter: blur(8px);
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
-h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
+.container p, .container h1, .container h3 {
+  color: #1a1a1a;
 }
 
-h3 {
-  font-weight: 300;
-  margin-bottom: 30px;
+.container p span.emission {
+  color: #4B0082; /* dark purple */
+  font-weight: bold;
 }
 
-p {
-  line-height: 1.6;
-  font-size: 16px;
+.container p span.temperature {
+  color: #D2691E; /* dark orange */
+  font-weight: bold;
 }
