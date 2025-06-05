@@ -76,12 +76,12 @@ header .home-button:hover {
   align-items: center;
 }
 
-.slide h3::after {
-  content: url('https://upload.wikimedia.org/wikipedia/commons/1/1d/Space_invader_ghost_icon.png');
-  width: 16px;
-  height: 16px;
+.slide h3 img.ghost-icon {
+  width: 18px;
+  height: 18px;
   margin-left: 8px;
   opacity: 0.7;
+  vertical-align: middle;
 }
 
 button {
@@ -91,14 +91,14 @@ button {
   cursor: pointer;
   width: 24px;
   height: 24px;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1d/Space_invader_ghost_icon.png');
+  background-image: url('https://silvia-ferrer.github.io/portfolio/assets/pacman-ghost.png');
   background-size: cover;
-  opacity: 0.6;
+  opacity: 0.4;
   transition: opacity 0.3s;
 }
 
 button:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .step-description {
@@ -129,11 +129,12 @@ ul {
   position: fixed;
   width: 40px;
   height: 40px;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/1/1d/Space_invader_ghost_icon.png') no-repeat center;
+  background: url('https://silvia-ferrer.github.io/portfolio/assets/pacman-ghost.png') no-repeat center;
   background-size: contain;
-  opacity: 0.1;
-  animation: floatGhosts 30s linear infinite;
+  opacity: 0.3;
+  animation: floatGhosts 60s linear infinite;
   pointer-events: none;
+  z-index: 0;
 }
 
 @keyframes floatGhosts {
