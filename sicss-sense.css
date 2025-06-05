@@ -14,6 +14,7 @@ header {
   padding: 2rem 1rem;
   background-color: #121212;
   border-bottom: 4px solid #ffcc00;
+  position: relative;
 }
 
 header h1 {
@@ -31,6 +32,24 @@ header h2 {
 header .date {
   color: #cccccc;
   font-size: 0.9rem;
+}
+
+header .home-button {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #1d1d1d;
+  color: #ffcc00;
+  text-decoration: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #ffcc00;
+  font-size: 0.85rem;
+  transition: background-color 0.3s;
+}
+
+header .home-button:hover {
+  background-color: #2e2e2e;
 }
 
 .slide {
@@ -140,5 +159,9 @@ ul {
   }
   .step-description {
     font-size: 0.85rem;
+  }
+  header .home-button {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.5rem;
   }
 }
