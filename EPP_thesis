@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SICSS Sense</title>
+  <link rel="stylesheet" href="sicss-sense.css">
+</head>
+<body>
+  <header>
+    <h1>A Ghostly Hero's Journey</h1>
+    <h2>SICSS Sense: A Text Analysis on EPP Dissertations</h2>
+    <p class="date">May 23, 2025</p>
+  </header>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h3>The Call to Adventure</h3>
+      <button onclick="toggleContent('call')">What is this step?</button>
+    </div>
+    <div class="step-description" id="call" style="display: none;">
+      The hero receives a call to begin a quest sparked by a challenge or external problem.
+    </div>
+    <p>The SICSS Sense group received the call from the Engineering and Public Policy (EPP) Department at Carnegie Mellon University to analyse how research has changed over time:</p>
+    <ul>
+      <li>Can we observe any trends through dissertations?</li>
+      <li>Impact of faculty additions / losses on dissertation content?</li>
+      <li>How have methodologies changed?</li>
+    </ul>
+    <p class="note">Reason of the call: John, Hannah, and Stacy are selfish and made the project all about themselves</p>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h3>Supernatural Aid</h3>
+      <button onclick="toggleContent('aid')">What is this step?</button>
+    </div>
+    <div class="step-description" id="aid" style="display: none;">
+      The hero receives help from mentors or tools to begin the journey.
+    </div>
+    <p>The SICSS Sense group got magical help from Group 6 to craft and download a dataset. The dataset is comprised of EPP's PhD dissertations posted publicly as PDFs on KiltHub. Abstracts and metadata were retrieved through Zotero.</p>
+    <ul>
+      <li>87 Variables: Key (str), Publication date (str), Title (str), Author (str), Abstract (str)</li>
+      <li>197 rows, each representing one dissertation</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h3>Refusal of the Call</h3>
+      <button onclick="toggleContent('refusal')">What is this step?</button>
+    </div>
+    <div class="step-description" id="refusal" style="display: none;">
+      The hero hesitates, fearing the journey might not be successful.
+    </div>
+    <p>The SICSS Sense group were worried the limited dataset would not give them enough information to draw significant conclusions:</p>
+    <ul>
+      <li>Dissertations are only available for recent years (2009–)</li>
+      <li>Some years only have one or two dissertations</li>
+      <li>Abstracts are occasionally sparse</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h3>The Crossing of the Threshold</h3>
+      <button onclick="toggleContent('threshold')">What is this step?</button>
+    </div>
+    <div class="step-description" id="threshold" style="display: none;">
+      The hero commits to the journey and enters the unknown.
+    </div>
+    <p>The SICSS Sense group started their journey into the unknown by cleaning the dataset:</p>
+    <ul>
+      <li>Removed stopwords and applied a custom stopword dictionary</li>
+      <li>Tokenized abstracts by words</li>
+      <li>Dropped years with fewer than 3 dissertations for time series analysis</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h3>Road of Trials</h3>
+      <button onclick="toggleContent('trials')">What is this step?</button>
+    </div>
+    <div class="step-description" id="trials" style="display: none;">
+      The hero faces challenges that test and teach them.
+    </div>
+    <p>The exploratory analysis of the dataset came with technical and theoretical challenges:</p>
+    <ul>
+      <li>Trends in AI terms in dissertations</li>
+      <li>Proportion of keywords by year</li>
+      <li>Energy dictionary and comparing schools</li>
+      <li>Co-occurrence of terms and stems in the same abstract</li>
+    </ul>
+    <div class="viz-placeholder">[Embed R visualizations here]</div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h3>The Crossing of the Return Threshold</h3>
+      <button onclick="toggleContent('return')">What is this step?</button>
+    </div>
+    <div class="step-description" id="return" style="display: none;">
+      The hero prepares to bring insights back to the ordinary world.
+    </div>
+    <p>As the SICSS Sense group learned from the text analysis completed on the abstracts of the EPP's dissertation thesis, they looked forward to comparing it to other universities' repositories to learn to live in the ordinary world once again.</p>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h3>Master of the Two Worlds</h3>
+      <button onclick="toggleContent('master')">What is this step?</button>
+    </div>
+    <div class="step-description" id="master" style="display: none;">
+      The hero is transformed and brings new understanding.
+    </div>
+    <p>To share their new wisdom, the SICSS Sense group created a new dashboard with which the ordinary world can interact. Plug in any word and see the average yearly proportion per thesis.</p>
+    <div class="viz-placeholder">[Embed Shiny dashboard iframe here]</div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h3>Freedom to Live</h3>
+      <button onclick="toggleContent('freedom')">What is this step?</button>
+    </div>
+    <div class="step-description" id="freedom" style="display: none;">
+      The hero continues life with renewed perspective and peace.
+    </div>
+    <p>The SICSS Sense group accepts a new version of themselves and understands the limitations of this research and future directions:</p>
+    <ul>
+      <li>Expand comparisons to other departments and universities</li>
+      <li>Include dissertations from before 2009</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h3>Thanks</h3>
+    <p>Thank you for joining us on our ghostly hero's journey through EPP dissertations.</p>
+    <p>This project was created by the SICSS Sense group: Silvia Ferrer, Daniella Escobar, and Group 6.</p>
+  </section>
+
+  <script>
+    function toggleContent(id) {
+      const el = document.getElementById(id);
+      el.style.display = (el.style.display === 'none') ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
