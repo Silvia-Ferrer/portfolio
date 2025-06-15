@@ -143,6 +143,13 @@ ul {
 .ghost:nth-child(4) { left: 75%; animation-delay: 15s; }
 .ghost:nth-child(5) { left: 90%; animation-delay: 20s; }
 
+.ghost1 { left: 5%; animation-delay: 0s; }
+.ghost2 { left: 25%; animation-delay: 5s; }
+.ghost3 { left: 50%; animation-delay: 10s; }
+.ghost4 { left: 75%; animation-delay: 15s; }
+.ghost5 { left: 90%; animation-delay: 20s; }
+
+
 @keyframes floatGhosts {
   0% { transform: translateY(100vh) translateX(0); }
   100% { transform: translateY(-100vh) translateX(100vw); }
