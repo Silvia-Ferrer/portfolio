@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Courier New', monospace;
+  font-size: 17px;
   background: linear-gradient(135deg, #1d1d1d, #2e2e2e);
   color: #e0e0e0;
   line-height: 1.6;
@@ -18,20 +19,20 @@ header {
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   color: #ffcc00;
   margin: 0;
 }
 
 header h2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #ffef99;
   margin: 0.5rem 0;
 }
 
 header .date {
   color: #cccccc;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 header .home-button {
@@ -44,7 +45,7 @@ header .home-button {
   padding: 0.4rem 0.7rem;
   border-radius: 5px;
   border: 1px solid #ffcc00;
-  font-size: 0.85rem;
+  font-size: 1rem;
   transition: background-color 0.3s;
 }
 
@@ -60,6 +61,7 @@ header .home-button:hover {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   position: relative;
+  font-size: 1.06em;
 }
 
 .slide-header {
@@ -74,14 +76,13 @@ header .home-button:hover {
   margin: 0;
   display: inline-flex;
   align-items: center;
+  font-size: 1.3rem;
 }
 
-.slide h3::after {
-  content: url('https://silvia-ferrer.github.io/portfolio/assets/pacman-ghost.png');
+.inline-ghost {
   width: 20px;
   height: 20px;
-  margin-left: 10px;
-  display: inline-block;
+  margin-right: 10px;
 }
 
 button {
@@ -106,7 +107,7 @@ button:hover {
   padding: 0.8rem;
   margin-bottom: 1rem;
   border-left: 4px solid #ffcc00;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 ul {
@@ -124,51 +125,45 @@ ul {
   font-style: italic;
 }
 
-/* Ghost animation */
 .ghost {
   position: fixed;
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   background: url('https://silvia-ferrer.github.io/portfolio/assets/pacman-ghost.png') no-repeat center;
   background-size: contain;
-  opacity: 0.3;
+  opacity: 0.2;
   animation: floatGhosts 60s linear infinite;
   pointer-events: none;
   z-index: 0;
 }
 
 .ghost:nth-child(1) { left: 5%; animation-delay: 0s; }
-.ghost:nth-child(2) { left: 25%; animation-delay: 10s; }
-.ghost:nth-child(3) { left: 50%; animation-delay: 20s; }
-.ghost:nth-child(4) { left: 75%; animation-delay: 30s; }
-.ghost:nth-child(5) { left: 90%; animation-delay: 40s; }
+.ghost:nth-child(2) { left: 25%; animation-delay: 5s; }
+.ghost:nth-child(3) { left: 50%; animation-delay: 10s; }
+.ghost:nth-child(4) { left: 75%; animation-delay: 15s; }
+.ghost:nth-child(5) { left: 90%; animation-delay: 20s; }
 
 @keyframes floatGhosts {
-  0% {
-    transform: translateY(100vh) translateX(0);
-  }
-  100% {
-    transform: translateY(-100vh) translateX(100vw);
-  }
+  0% { transform: translateY(100vh) translateX(0); }
+  100% { transform: translateY(-100vh) translateX(100vw); }
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
   .slide {
     margin: 2rem 1rem;
     padding: 1.5rem;
   }
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
   header h2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .step-description {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
   header .home-button {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     padding: 0.3rem 0.5rem;
   }
 }
