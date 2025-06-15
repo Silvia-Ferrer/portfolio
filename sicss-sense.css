@@ -76,12 +76,12 @@ header .home-button:hover {
   align-items: center;
 }
 
-.slide h3 img.ghost-icon {
-  width: 18px;
-  height: 18px;
-  margin-left: 8px;
-  opacity: 0.7;
-  vertical-align: middle;
+.slide h3::after {
+  content: url('https://silvia-ferrer.github.io/portfolio/assets/pacman-ghost.png');
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  display: inline-block;
 }
 
 button {
@@ -136,6 +136,12 @@ ul {
   pointer-events: none;
   z-index: 0;
 }
+
+.ghost:nth-child(1) { left: 5%; animation-delay: 0s; }
+.ghost:nth-child(2) { left: 25%; animation-delay: 10s; }
+.ghost:nth-child(3) { left: 50%; animation-delay: 20s; }
+.ghost:nth-child(4) { left: 75%; animation-delay: 30s; }
+.ghost:nth-child(5) { left: 90%; animation-delay: 40s; }
 
 @keyframes floatGhosts {
   0% {
