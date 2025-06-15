@@ -2,6 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silvia Ferrer Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial Rounded MT Bold', sans-serif;
+      background: url('assets/portfolio-landingpage.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      margin: 1rem 0;
+    }
+    p {
+      max-width: 700px;
+      margin: 0.5rem auto;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid white;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    a.button:hover {
+      background: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <h1>PORTFOLIO</h1>
+  <p>Hello! My name is Silvia Ferrer, and this is my portfolio where I have created webpages for some of the projects I have done in the past years. Each project has a title and a small description.</p>
+  <p>Please click on any title you would like to see the complete information of. I hope you like it ^^</p>
+  <p>And of course, thank you so much for visiting this webpage. You can find me on LinkedIn, I’ll be happy to connect ^^</p>
+  <a href="#projects" class="button">View Projects</a>
+</body>
+
+  <h2 class="section-title" id="projects">Projects</h2>
+<ul class="project-list">
+  <li class="project-item">
+    <a href="SICSS_Sense.html" class="project-link">
+      <h3 class="project-title">SICSS Project: EPP Thesis</h3>
+      <p class="project-description">
+        Trends in dissertation topics, methods, and faculty alignment across years at CMU's EPP department using R and Shiny.
+      </p>
+    </a>
+  </li>
+  <li class="project-item">
+    <a href="emissions.html" class="project-link">
+      <h3 class="project-title">CO2 Emissions and Temperature</h3>
+      <p class="project-description">
+        A Tableau-based analysis of historical global emissions and temperature rise, with interactive visual storytelling.
+      </p>
+    </a>
+  </li>
+</ul>
+
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <title>Welcome to My Portfolio</title>
   <link rel="stylesheet" href="styles/index.css">
 </head>
