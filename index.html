@@ -12,6 +12,13 @@
       50% { filter: brightness(1.3); }
     }
 
+    @keyframes fadeUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
     body {
       margin: 0;
       padding: 0;
@@ -44,24 +51,6 @@
       line-height: 1.8rem;
     }
 
-    a.button {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 0.75rem 1.5rem;
-      background: rgba(255, 255, 255, 0.1);
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      border: 2px solid white;
-      border-radius: 6px;
-      transition: 0.3s;
-    }
-
-    a.button:hover {
-      background: white;
-      color: black;
-    }
-
     .section-title {
       font-family: 'Roboto Mono', monospace;
       font-size: 2rem;
@@ -89,6 +78,12 @@
       animation: fadeUp 1s ease forwards;
     }
 
+    .project-item:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: scale(1.02);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+
     .project-item:nth-child(1) { animation-delay: 0.3s; }
     .project-item:nth-child(2) { animation-delay: 0.6s; }
 
@@ -108,13 +103,6 @@
       text-decoration: none;
       color: inherit;
       display: block;
-    }
-
-    @keyframes fadeUp {
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
     }
 
     @media (max-width: 600px) {
@@ -139,24 +127,23 @@
     <p>Hello! My name is Silvia Ferrer, and this is my portfolio where I have created webpages for some of the projects I have done in the past years. Each project has a title and a small description.</p>
     <p>Please click on any title you would like to see the complete information of. I hope you like it ^^</p>
     <p>And of course, thank you so much for visiting this webpage. You can find me on LinkedIn, I’ll be happy to connect ^^</p>
-    <a href="#projects" class="button">View Projects</a>
   </section>
 
   <h2 class="section-title" id="projects">Projects</h2>
   <ul class="project-list">
-    <li class="project-item">
-      <a href="SICSS_Sense.html" class="project-link">
-        <h3 class="project-title">SICSS Project: EPP Thesis</h3>
+        <li class="project-item">
+      <a href="emissions.html" class="project-link">
+        <h3 class="project-title">CO2 Emissions and Temperature</h3>
         <p class="project-description">
-          Trends in dissertation topics, methods, and faculty alignment across years at CMU's EPP department using R and Shiny.
+          A research project was conducted on Tableau about how different types of CO2 emissions have trended in different countries in the past 300 years, as well as their impact on temperature increase
         </p>
       </a>
     </li>
     <li class="project-item">
-      <a href="emissions.html" class="project-link">
-        <h3 class="project-title">CO2 Emissions and Temperature</h3>
+      <a href="SICSS_Sense.html" class="project-link">
+        <h3 class="project-title">SICSS Project: EPP Thesis</h3>
         <p class="project-description">
-          A Tableau-based analysis of historical global emissions and temperature rise, with interactive visual storytelling
+          For the Summer Institute of Computational Social Science (SICSS) at Carnegie Mellon University (CMU) in 2025 (organized by the libraries), our group -SICSS Sense looked into some trends among the dissertations of the PhD students of the Engineering and Public Policy Department of CMU. We explained our research journey and all the challenges we faced doing this research
         </p>
       </a>
     </li>
