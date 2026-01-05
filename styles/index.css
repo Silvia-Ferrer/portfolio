@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: url('../assets/background_index.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #1e1e1e;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+header h1 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 3rem;
+  color: #0c4f2c;
+  margin-bottom: 0.5rem;
+}
+
+header h2 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.3rem;
+  color: #1e1e1e;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1rem;
+  color: #2e2e2e;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-box {
+  display: block;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1.5rem;
+  border-left: 6px solid #418f59;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-box h3 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2rem;
+  color: #1a4d3e;
+  margin-bottom: 0.5rem;
+}
+
+.project-box p {
+  font-size: 0.95rem;
+  color: #2e2e2e;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .project-box {
+    padding: 1.2rem;
+  }
+
+  .project-box h3 {
+    font-size: 1rem;
+  }
+}
