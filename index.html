@@ -1,157 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Silvia Ferrer Portfolio</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap');
-
-    @keyframes bubbleShine {
-      0%, 100% { filter: brightness(1); }
-      50% { filter: brightness(1.3); }
-    }
-
-    @keyframes fadeUp {
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Quicksand', sans-serif;
-      background: url('assets/bubbles-canva.png') no-repeat center center fixed;
-      background-size: cover;
-      animation: bubbleShine 8s ease-in-out infinite;
-      color: white;
-      text-align: center;
-    }
-
-    .intro {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    h1 {
-      font-family: 'Roboto Mono', monospace;
-      font-size: 4rem;
-      margin: 1rem 0;
-    }
-
-    p {
-      max-width: 700px;
-      margin: 0.5rem auto;
-      font-size: 1.2rem;
-      line-height: 1.8rem;
-    }
-
-    .section-title {
-      font-family: 'Roboto Mono', monospace;
-      font-size: 2rem;
-      margin-top: 4rem;
-      margin-bottom: 1rem;
-    }
-
-    .project-list {
-      list-style: none;
-      padding: 0;
-      margin: 2rem auto;
-      max-width: 700px;
-    }
-
-    .project-item {
-      text-align: left;
-      background: rgba(255, 255, 255, 0.07);
-      margin: 2rem auto;
-      padding: 1.25rem 1rem;
-      border-radius: 10px;
-      transition: 0.3s ease;
-      border-left: 5px solid #ffffffcc;
-      transform: translateY(40px);
-      opacity: 0;
-      animation: fadeUp 1s ease forwards;
-    }
-
-    .project-item:hover {
-      background: rgba(255, 255, 255, 0.15);
-      transform: scale(1.02);
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-    }
-
-    .project-item:nth-child(1) { animation-delay: 0.3s; }
-    .project-item:nth-child(2) { animation-delay: 0.6s; }
-
-    .project-title {
-      font-family: 'Roboto Mono', monospace;
-      font-size: 1.5rem;
-      margin: 0 0 0.25rem 0;
-    }
-
-    .project-description {
-      font-size: 1rem;
-      font-family: 'Quicksand', sans-serif;
-      margin: 0;
-    }
-
-    a.project-link {
-      text-decoration: none;
-      color: inherit;
-      display: block;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 3rem;
-      }
-      .section-title {
-        font-size: 1.5rem;
-      }
-      .project-title {
-        font-size: 1.2rem;
-      }
-      .project-description {
-        font-size: 0.9rem;
-      }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FEVA - Silvia Ferrer Portfolio</title>
+  <link rel="stylesheet" href="styles/index-style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Mono&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <section class="intro">
-    <h1>FEVA</h1>
-    <h2>Hello! My name is Silvia Ferrer. Welcome to my portfolio!</h2>
-    <br>
-    <p> <b>Feva</b> comes from two simple Latin roots: Silvia is connected to <i>silva</i>, the word for forest, which signals 
+  <div class="overlay"></div>
+  <div class="container">
+    <header>
+      <h1>FEVA</h1>
+      <h2>Hello! My name is Silvia Ferrer. <br/>Welcome to my portfolio!</h2>
+      <p> <b>Feva</b> comes from two simple Latin roots: Silvia is connected to <i>silva</i>, the word for forest, which signals 
       things that grow, change, and spread chaotically; and Ferrer, which comes from <i>ferrum</i>, iron, a symbol of 
       structure and strength. Taken together, Feva fits a portfolio built on clear academic foundations 
       while still leaving room to explore, adapt, and try new things.</p>
     <br>
     <p>In this portfolio, I have created web pages for some of the projects I have worked on in recent years. 
     Each project has a title and a small description. Please click any title to see more.</p>
-    <p>And of course, thank you so much for visiting. You can find me on <a href="https://www.linkedin.com/in/silferrer/">LinkedIn</a>
-    </p>
-  </section>
+    <p>And of course, thank you so much for visiting. You can find me on <a href="https://www.linkedin.com/in/silferrer/">LinkedIn</a> </p>
+    </header>
 
-  <h2 class="section-title" id="projects">Projects</h2>
-  <ul class="project-list">
-        <li class="project-item">
-      <a href="emissions.html" class="project-link">
-        <h3 class="project-title">CO2 Emissions and Temperature</h3>
-        <p class="project-description">
+    <section class="projects">
+      <a href="emissions.html" class="project-box">
+        <h3>CO2 Emissions and Temperature</h3>
+        <p>
           This research project examines the different types of CO2 emissions and how they have trended across countries over the past 300 years,
           as well as their impact on temperature increases.<br><br>It was crafted using Tableau's analytic and graphic tools -> Prep, Desktop, Public
         </p>
       </a>
-    </li>
-    <li class="project-item">
-      <a href="SICSS_Sense.html" class="project-link">
-        <h3 class="project-title">SICSS Project: EPP Thesis</h3>
-        <p class="project-description">
+
+      <a href="SICSS_Sense.html" class="project-box">
+        <h3>SICSS Project: EPP Thesis</h3>
+        <p>
           During the Summer Institute of Computational Social Science (SICSS) at Carnegie Mellon University (CMU) in 2025
            (organized by the CMU Libraries) I had the honor to be part of the SICSS Sense team for the final research project: we looked 
           into some trends among the dissertations of the PhD students 
@@ -159,20 +42,21 @@
             journey and all the challenges we faced 
           using Joseph Campbell's The Journey of the Hero process.<br><br>We used the College's repository to download 
           the raw data, and R to clean, analyse, and graph it.
-          
         </p>
       </a>
-    </li>
-    <li class="project-item">
-      <a href="od.html" class="project-link">
-        <h3 class="project-title">Drug and Opioid Overdose Data Interactive Report in Racine County</h3>
-        <p class="project-description">
-          During my internship at the Public Health Division of Racine County, Wisconsin, I analyzed data on suspected overdoses
+
+      <!-- Add more projects as needed -->
+
+       <section class="projects">
+      <a href="od.html" class="project-box">
+        <h3>Drug and Opioid Overdose Data Interactive Report in Racine County</h3>
+        <p>
+           At the Public Health Division of Racine County, Wisconsin, I analyzed data on suspected overdoses
         among Racine County residents, reported by emergency department visits between 2020 and 2023.<br>I used OpenRefine to clean data,
           and Power BI to digest it and create the report.
         </p>
       </a>
-    </li>
-  </ul>
+    </section>
+  </div>
 </body>
 </html>
