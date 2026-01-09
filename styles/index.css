@@ -10,6 +10,8 @@ body {
 .overlay {
   position: fixed;
   inset: 0;
+  padding: 40px;
+  max-width: 800px;
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(4px);
   z-index: 0;
