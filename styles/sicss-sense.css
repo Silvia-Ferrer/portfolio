@@ -10,6 +10,11 @@ body {
   overflow-x: hidden;
 }
 
+.pdf {
+  display: block;
+  margin: 0 auto 40px auto;
+}
+
 header {
   text-align: center;
   padding: 2rem 1rem;
